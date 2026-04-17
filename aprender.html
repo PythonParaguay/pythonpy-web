@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Aprender Python | Python Paraguay</title>
+  <meta name="description" content="Recursos para aprender Python en español, curados por la comunidad Python Paraguay.">
+  <meta name="author" content="Python Paraguay">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aprender Python | Python Paraguay">
+  <meta property="og:description" content="Recursos para aprender Python en español.">
+  <meta property="og:url" content="https://pythonpy.org/aprender.html">
+  <meta property="og:image" content="https://pythonpy.org/img/logo.png">
+  <meta property="og:locale" content="es_PY">
+
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Python Paraguay" height="56">
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav">
+        <a href="index.html#sobre">Comunidad</a>
+        <a href="index.html#proximo-evento">Próximo evento</a>
+        <a href="index.html#sumate">Sumate</a>
+        <a href="index.html#recursos">Recursos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section page-intro">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> · Aprender Python</p>
+        <h1>Aprender Python</h1>
+        <p class="lead">Recursos recomendados para arrancar desde cero, profundizar o consultar cuando te trabes.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="highlight-block">
+          <h2>La mejor manera de aprender es en comunidad</h2>
+          <p>Estudiar solo funciona, pero aprender rodeado de gente que también está aprendiendo, o que ya pasó por donde estás, acelera todo: resolvés dudas más rápido, descubrís recursos que no conocías y te motivás cuando las cosas se ponen difíciles.</p>
+          <p>En el grupo de Telegram de Python Paraguay hay personas de todos los niveles, desde quienes escriben su primera línea hasta quienes usan Python todos los días en su trabajo. Sumate, hacé tus preguntas (por más básicas que te parezcan) y compartí lo que vas aprendiendo.</p>
+          <a class="btn btn-primary" href="https://t.me/PythonParaguay" target="_blank" rel="noopener">Unirme al Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="resource-heading">Material recomendado</h2>
+        <div class="resource-list">
+
+          <article class="card">
+            <h3>Tutorial oficial en español</h3>
+            <p>La documentación oficial de Python con un tutorial paso a paso, referencia del lenguaje y guías de la biblioteca estándar. Punto de partida recomendado.</p>
+            <a href="https://docs.python.org/es/3/tutorial/" target="_blank" rel="noopener">docs.python.org/es &rarr;</a>
+          </article>
+
+          <article class="card card-soon">
+            <h3>Más recursos próximamente</h3>
+            <p>Estamos armando una lista curada por la comunidad: cursos, libros, canales y guías en español. Si querés sugerir algún material, escribinos por <a href="https://t.me/PythonParaguay" target="_blank" rel="noopener">Telegram</a> o <a href="mailto:python-paraguay@googlegroups.com">email</a>.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo-white.png" alt="Python Paraguay" height="56">
+        <p>Python en Paraguay, hecho comunidad.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Enlaces del pie de página">
+        <a href="https://www.meetup.com/python-paraguay/" target="_blank" rel="noopener">Meetup</a>
+        <a href="https://t.me/PythonParaguay" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.youtube.com/@PythonParaguay" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/PythonParaguay/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/PythonParaguay" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:python-paraguay@googlegroups.com">Email</a>
+        <a href="https://github.com/PythonParaguay/docs/blob/master/CoC.md" target="_blank" rel="noopener">Código de conducta</a>
+        <a href="https://github.com/PythonParaguay/pythonpy-web" target="_blank" rel="noopener">Código del sitio</a>
+      </nav>
+
+      <p class="footer-copy">&copy; Python Paraguay · Sitio abierto en <a href="https://github.com/PythonParaguay/pythonpy-web" target="_blank" rel="noopener">GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('primary-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+
+</body>
+</html>
